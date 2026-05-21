@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "nyrineblur",
+  "version": "${version}",
+  "name": "Nyrine Blur",
+  "description": "Beautiful cinematic motion blur for Minecraft 1.21.1",
+  "authors": ["Zenit"],
+  "contact": {
+    "sources": "https://github.com/yourname/NyrineBlur"
+  },
+  "license": "MIT",
+  "icon": "assets/nyrineblur/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.nyrine.nyrineblur.NyrineBlurClient"
+    ]
+  },
+  "mixins": [
+    "NyrineBlur.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.2",
+    "minecraft": "\~1.21.1",
+    "fabric-api": "*"
+  }
+}
